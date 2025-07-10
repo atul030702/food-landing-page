@@ -15,7 +15,6 @@ const ItemCategory = ({ categoryName }) => {
 
                 const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${categoryName}`);
                 const data = await response.json();
-                console.log(data);
                 setMeals(data?.meals || []);
             } catch (error) {
                 console.error("Failed to fetch data:", error.message);
