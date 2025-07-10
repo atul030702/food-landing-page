@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+.catalog {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+}
+.catalog::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-3px);
+    }
+    40% {
+        transform: translateX(3px);
+    }
+    60% {
+        transform: translateX(-2px);
+    }
+    80% {
+        transform: translateX(2px);
+    }
+}
+
+.wiggle-x {
+    animation: wiggle 1.5s ease-in-out infinite;
+}

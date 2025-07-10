@@ -40,7 +40,7 @@ const ItemCategory = ({ categoryName }) => {
                     className="w-full my-2 sm:w-1/2 md:w-1/2 flex items-center justify-start"
                 >
                     <img
-                        className="p-2 rounded-full size-30 md:size-50"
+                        className="p-2 rounded-full size-25 sm:size-30 md:size-40"
                         src={meal?.strMealThumb}
                         alt={meal?.strMeal}
                         loading="lazy"
@@ -52,10 +52,10 @@ const ItemCategory = ({ categoryName }) => {
                             <h2 className="font-bold text-lg md:text-2xl sm:text-xl">{meal?.strMeal}</h2>
                             <p className="text-[#345333] text-base md:text-lg sm:text-lg font-semibold ml-4">${getRandomPrice()}</p>
                         </div>
-                        <div className="w-full h-px bg-gray-400 block"></div>
+                        <div className="w-full border-b-2 border-gray-400 border-dotted"></div>
                         <div className="w-full flex justify-between items-center gap-1 sm:gap-2 md:gap-5">
                             <p className="text-sm md:text-base">Lorem ipsum dolor sit amet quam in lacus risus.</p>
-                            <button className="text-[#345333] text-base md:text-lg md:font-semibold cursor-pointer whitespace-nowrap">
+                            <button className="text-[#345333] ml-1 sm:ml-2 md:ml-5 text-sm md:text-lg md:font-semibold cursor-pointer whitespace-nowrap">
                                 {`SHOP NOW -->`}
                             </button>
                         </div>

@@ -1,8 +1,8 @@
 const Banner = () => {
     return (
-        <main className="w-full min-h-screen relative flex flex-col lg:flex-row -z-10">
+        <main className="w-full min-h-full md:min-h-screen relative flex flex-col-reverse lg:flex-row -z-10">
             
-            <div className="absolute top-[7%] right-[35%] sm:top-[7%] sm:right-8 md:top-12 md:right-12 lg:top-[20%] lg:right-[15%] z-0">
+            <div className="absolute top-[10%] right-[35%] sm:top-[7%] sm:right-8 md:top-12 md:right-12 lg:top-[20%] lg:right-[15%] z-10">
                 <img 
                     className="w-25 h-25 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-auto lg:h-auto max-w-none object-cover rounded-lg lg:rounded-none"
                     src="./food-image.webp" 
@@ -13,8 +13,8 @@ const Banner = () => {
             </div>
 
             {/* Left Section - Content */}
-            <section className="w-full lg:w-3/5 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 py-8 sm:py-12 md:py-16 lg:py-0 min-h-screen bg-[#F2F1EC] flex items-center justify-center lg:justify-start -z-20">
-                <div className="w-full max-w-2xl text-[#313131] text-center lg:text-left">
+            <section className="w-full lg:w-3/5 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 py-8 sm:py-12 md:py-16 lg:py-0 min-h-70 sm:min-h-screen md:min-h-screen bg-[#F2F1EC] flex items-center justify-center lg:justify-start">
+                <div className="w-full max-w-2xl text-[#313131] text-center lg:text-left z-20">
                     
                     <div className="inline-block mt-10 bg-[#345333] text-white p-3 py-1 rounded-full text-sm sm:text-base font-medium mb-4">
                         Discount up to 20%
@@ -45,7 +45,7 @@ const Banner = () => {
                         <button className="px-6 py-3 sm:px-8 sm:py-4 flex items-center justify-center text-white font-semibold text-lg sm:text-xl bg-[#345333] rounded-full hover:bg-[#2d4529] transition duration-300 whitespace-nowrap cursor-pointer">
                             <span>SHOP NOW</span>
                             <img 
-                                className="w-5 h-5 sm:w-6 sm:h-6 ml-2" 
+                                className="wiggle-x w-5 h-5 sm:w-6 sm:h-6 ml-2" 
                                 src="./arrowForward-icon.svg" 
                                 alt="" 
                                 draggable="false" 
@@ -73,7 +73,7 @@ const Banner = () => {
             </section>
 
             {/* Right Section - Green Background */}
-            <section className="w-full hidden md:block sm:block lg:block lg:w-2/5 min-h-32 sm:min-h-48 lg:min-h-screen bg-[#345333] -z-20" aria-hidden="true"></section>
+            <section className="w-full block lg:w-2/5 min-h-45 sm:min-h-48 lg:min-h-screen bg-[#345333] -z-20" aria-hidden="true"></section>
         </main>
     );
 };
