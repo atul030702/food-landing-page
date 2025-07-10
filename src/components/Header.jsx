@@ -1,7 +1,11 @@
 import { useState } from "react";
 
+import CountBadge from "./CountBadge.jsx";
+
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [cartCount, setCartCount] = useState(1);
+    const [favoriteCount, setFavoriteCount] = useState(2);
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -118,36 +122,42 @@ const Header = () => {
                     </button>
                     
                     {/* Favorites Button */}
-                    <button 
-                        className="p-1.5 sm:p-2 md:p-2 bg-[#345333] sm:bg-white/10 md:bg-white/10 rounded-full sm:hover:bg-white/5 md:hover:bg-white/5 transition-all duration-200 cursor-pointer"
-                        aria-label="Favorites"
-                    >
-                        <img 
-                            className="w-5 h-5 sm:w-6 sm:h-6" 
-                            src="./favorite-icon.svg" 
-                            alt="" 
-                            loading="lazy" 
-                            decoding="async" 
-                            draggable="false"
-                            aria-hidden="true"
-                        />
-                    </button>
+                    <div className="relative">
+                        <button 
+                            className="p-1.5 sm:p-2 md:p-2 bg-[#345333] sm:bg-white/10 md:bg-white/10 rounded-full sm:hover:bg-white/5 md:hover:bg-white/5 transition-all duration-200 cursor-pointer"
+                            aria-label="Favorites"
+                        >
+                            <img 
+                                className="w-5 h-5 sm:w-6 sm:h-6" 
+                                src="./favorite-icon.svg" 
+                                alt="" 
+                                loading="lazy" 
+                                decoding="async" 
+                                draggable="false"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <CountBadge count={favoriteCount} size="small" />
+                    </div>
                     
                     {/* Cart Button */}
-                    <button 
-                        className="p-1.5 sm:p-2 md:p-2 bg-[#345333] md:bg-white/10 sm:bg-white/10 rounded-full md:hover:bg-white/5 sm:hover:bg-white/5 transition-all duration-200 cursor-pointer"
-                        aria-label="Shopping cart"
-                    >
-                        <img 
-                            className="w-5 h-5 sm:w-6 sm:h-6" 
-                            src="./cart-icon.svg" 
-                            alt="" 
-                            loading="lazy" 
-                            decoding="async" 
-                            draggable="false"
-                            aria-hidden="true"
-                        />
-                    </button>
+                    <div className="relative">
+                        <button 
+                            className="p-1.5 sm:p-2 md:p-2 bg-[#345333] md:bg-white/10 sm:bg-white/10 rounded-full md:hover:bg-white/5 sm:hover:bg-white/5 transition-all duration-200 cursor-pointer"
+                            aria-label="Shopping cart"
+                        >
+                            <img 
+                                className="w-5 h-5 sm:w-6 sm:h-6" 
+                                src="./cart-icon.svg" 
+                                alt="" 
+                                loading="lazy" 
+                                decoding="async" 
+                                draggable="false"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <CountBadge count={cartCount} size="small" />
+                    </div>
                     
                     {/* Mobile Menu Button */}
                     <button 

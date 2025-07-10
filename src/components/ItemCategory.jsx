@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+import ItemCategoryShimmer from "./ItemCategoryShimmer.jsx";
+
 const ItemCategory = ({ categoryName }) => {
     const [meals, setMeals] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -30,7 +32,7 @@ const ItemCategory = ({ categoryName }) => {
     };
 
     if(loading) {
-        return <div className="text-center text-lg mt-10">Loading {categoryName}</div>
+        return <ItemCategoryShimmer itemCount={8} />
     }
 
     return (
