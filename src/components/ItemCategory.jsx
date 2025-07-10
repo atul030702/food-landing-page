@@ -6,8 +6,6 @@ const ItemCategory = ({ categoryName }) => {
     const [meals, setMeals] = useState([]);
     const [loading, setLoading] = useState(false);
 
-    console.log(categoryName);
-
     useEffect(() => {
         async function fetchMealData() {
             try {
