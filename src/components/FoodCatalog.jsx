@@ -10,7 +10,7 @@ const FoodCatalog = () => {
         <div className="flex flex-col items-center justify-start mt-5 sm:mt-7 md:mt-10">
 
             <h3 className="text-base md:text-lg sm:text-[1rem] font-semibold">Shop by Category</h3>
-            <h1 className="text-xl md:text-3xl sm:text-3xl font-bold">Top Category Of Organic Food</h1>
+            <h1 className="text-xl md:text-3xl sm:text-3xl font-bold font-serif">Top Category Of Organic Food</h1>
 
             <div className="catalog w-full px-5 my-5 flex justify-center items-center overflow-x-auto">
                 {categoryNames.map((category, index) => (

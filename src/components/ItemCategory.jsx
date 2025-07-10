@@ -42,7 +42,7 @@ const ItemCategory = ({ categoryName }) => {
                     className="w-full my-2 sm:w-1/2 md:w-1/2 flex items-center justify-start"
                 >
                     <img
-                        className="p-2 rounded-full size-25 sm:size-30 md:size-40"
+                        className="p-2 rounded-full size-25 sm:size-30 md:size-30"
                         src={meal?.strMealThumb}
                         alt={meal?.strMeal}
                         loading="lazy"

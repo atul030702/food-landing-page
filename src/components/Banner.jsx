@@ -20,7 +20,7 @@ const Banner = () => {
                         Discount up to 20%
                     </div>
                     
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold leading-tight mb-6">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold leading-tight mb-6 font-serif">
                         Buy Fresh And Organic Grocery{" "}
                         <span className="relative inline-block">
                             Food
@@ -36,8 +36,8 @@ const Banner = () => {
                     </h1>   
 
                     
-                    <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
-                        Lorem ipsum dolor sit amet consectetur. Condimentum sed sed blandit purus nec nibh tortor ipsum. Placerat consequat lorem. Vivamus varius tellus dui, vel nunc.
+                    <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 font-sans">
+                        Lorem ipsum dolor sit amet consectetur. Condimentum sed sed blandit purus nec nibh tortor ipsum. Placerat consequat lorem.
                     </p>
                     
                     <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8">
